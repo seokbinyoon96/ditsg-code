@@ -1,5 +1,5 @@
-# ditsg
+# ditsg-code
 
 TODO: one-paragraph project description.
 
-Code coming soon. Project page: https://github.com/seokbinyoon96/ditsg.github.io
+Code coming soon. Project page: https://seokbinyoon96.github.io/ditsg/
