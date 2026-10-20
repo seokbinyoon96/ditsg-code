@@ -6,7 +6,8 @@
 
 ![DiTSG architecture: multi-agent diffusion transformer and sampling loop.](https://seokbinyoon96.github.io/ditsg/static/images/architecture.png)
 
-**Diffusion Transformers for Traffic Scene Generation (DiTSG)** is a context-aware generative model that learns from recorded air traffic operations to jointly generate multiple aircraft trajectories. Its denoising backbone uses stacked multi-agent inverted Transformer (MAIFormer) layers to model dependencies between aircraft. Conditioned on each aircraft's required time of arrival (RTA), DiTSG progressively refines noise into diverse traffic scenes that preserve realistic inter-aircraft interactions.
+We propose Diffusion Transformers for Traffic Scene Generation (DiTSG), a context-aware generative model for multi-agent air traffic scenes, where all aircraft trajectories are generated jointly and each trajectory is modeled in the context of the others. DiTSG employs stacked multi-agent inverted Transformer (MAIFormer) layers as the denoising backbone of a diffusion transformer. Generation is further conditioned on agent-specific required times of arrival (RTAs), enabling different temporal traffic configurations. Starting from noise, DiTSG iteratively refines the trajectories of all aircraft in a scene while modeling inter-aircraft dependencies at every denoising step. This joint denoising process enables the generated trajectories to remain mutually consistent while preserving realistic traffic interactions.
+
 
 ## Structure
 
