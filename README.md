@@ -14,7 +14,7 @@ We propose Diffusion Transformers for Traffic Scene Generation (DiTSG), a contex
 ```
 config.py        hyperparameters
 embedding.py     sinusoidal time embedding (t, tau)
-block.py         MAI block (masked multivariate attn -> agent attn -> FFN, adaLN-Zero)
+block.py         MAIFormer block (masked multivariate attn -> agent attn -> FFN, adaLN-Zero)
 model.py         DiTSG
 train.py         flow matching loss, EMA, training loop
 generate.py      Euler ODE sampling
